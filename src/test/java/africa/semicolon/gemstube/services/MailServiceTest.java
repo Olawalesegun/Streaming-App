@@ -23,6 +23,6 @@ public class MailServiceTest {
         List<Recipient> recipients = List.of(recipient);
         EmailRequest emailRequest = new EmailRequest();
         emailRequest.setSender(sender);
-        emailRequest.setRecipients();
+        emailRequest.setRecipients(recipients);
     }
 }
