@@ -16,7 +16,7 @@ public class GemsTubeUserService implements UserService {
     public RegisterResponse register(RegisterRequest registerRequest) {
         User user = new User();
         user.setEmail(registerRequest.getEmail());
-        user.setPassword((registerRequest.getPassword()));
+        user.setPassword(registerRequest.getPassword());
         User savedUser = userRepository.save(user);
         return new RegisterResponse(savedUser.getId());
     }
