@@ -8,9 +8,5 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 public class RegisterResponse {
-    
     private Long id;
-
-
-
 }
