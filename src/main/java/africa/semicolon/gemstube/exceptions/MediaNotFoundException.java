@@ -1,4 +1,7 @@
 package africa.semicolon.gemstube.exceptions;
 
-public class MediaNotFoundException {
+public class MediaNotFoundException extends GemsTubeException{
+    public MediaNotFoundException(String message) {
+        super(message);
+    }
 }
